@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-float average(float arr[10]) {
+float average(const int arr[10]) {
   float avg = 0;
   for (int i = 0; i < 10; i++) {
     avg += arr[i];
@@ -11,7 +11,7 @@ float average(float arr[10]) {
 }
 
 int main() {
-  float arr[10] = {8.0, 2.0, 6.0, 4.0, 8.0, 10.0, 12.0, 14.0, 9.0, 15.0};
+  int arr[10] = {8, 2, 6, 4, 8, 10, 12, 14, 9, 15};
   printf("The average is: %f", average(arr));
 
   return 0;
